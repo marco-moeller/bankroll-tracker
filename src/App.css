@@ -124,6 +124,10 @@ li {
   max-width: 500px;
 }
 
+canvas {
+  width: 80%;
+}
+
 /* -- UTILITY -- */
 
 /* -- Firefox -- */
@@ -132,3 +136,9 @@ li {
 }
 
 /* -- MEDIA -- */
+@media (width < 660px) {
+  .form {
+    flex-direction: column;
+    align-items: baseline;
+  }
+}
