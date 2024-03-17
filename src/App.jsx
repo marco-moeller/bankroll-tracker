@@ -81,12 +81,16 @@ function App() {
       let bankrolls = [];
       snapshot.docs.forEach((doc) => bankrolls.push(doc.data()));
       setData(
-        bankrolls.reduce((acc, obj) => {
-          for (const key in obj) {
-            acc[key] = obj[key];
-          }
-          return acc;
-        }, {})
+        bankrolls
+          .sort(
+            (a, b) => new Date(Object.keys(a)[0]) - new Date(Object.keys(b)[0])
+          )
+          .reduce((acc, obj) => {
+            for (const key in obj) {
+              acc[key] = obj[key];
+            }
+            return acc;
+          }, {})
       );
     });
   }, []);
