@@ -7,6 +7,7 @@ function Graph({ graphData }) {
         data={{
           datasets: [
             {
+              label: "Bankroll in USD",
               data: graphData
             }
           ]

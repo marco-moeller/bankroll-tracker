@@ -49,11 +49,9 @@ function App() {
     if (showCalendar) {
       return;
     }
-
     if (formData.amount === "") return;
 
     addBankrollToDB({ [formData.date]: formData.amount });
-
     setFormData({
       date: convertToLocaleDate(new Date()),
       amount: ""
