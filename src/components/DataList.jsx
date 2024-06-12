@@ -9,7 +9,7 @@ function DataList({ data, handleDelete }) {
           .map(([date, amount]) => ({
             date,
             amount
-          })).reverse().
+          }))
           .map((dataPoint) => (
             <li key={nanoid()}>
               <p>{dataPoint.date}</p>
@@ -24,7 +24,7 @@ function DataList({ data, handleDelete }) {
           ))}
       </ul>
     </section>
-  );
+  ).reverse();
 }
 
 export default DataList;
