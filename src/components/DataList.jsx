@@ -24,7 +24,7 @@ function DataList({ data, handleDelete }) {
           ))}
       </ul>
     </section>
-  ).reverse();
+  )
 }
 
 export default DataList;
