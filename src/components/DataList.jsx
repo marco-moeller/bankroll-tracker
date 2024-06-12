@@ -21,7 +21,8 @@ function DataList({ data, handleDelete }) {
                 <MdDeleteOutline />
               </div>
             </li>
-          ))}
+          ))
+          .reverse()}
       </ul>
     </section>
   );
