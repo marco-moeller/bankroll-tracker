@@ -7,17 +7,8 @@ import {
   doc,
   deleteDoc
 } from "firebase/firestore";
+import { firebaseConfig } from "./firebaseConfig";
 
-const firebaseConfig = {
-  apiKey: "AIzaSyCGfdK4ylSc55mYBB-LWtABU5c_C4IXzjY",
-  authDomain: "bankroll-8ae29.firebaseapp.com",
-  projectId: "bankroll-8ae29",
-  storageBucket: "bankroll-8ae29.appspot.com",
-  messagingSenderId: "705667618358",
-  appId: "1:705667618358:web:86662b596e59ea6a1caa97"
-};
-
-// Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
 const database = getFirestore(app);
